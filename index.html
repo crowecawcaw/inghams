@@ -32,11 +32,12 @@
       padding-top: 1rem;
       padding-bottom: 1rem;
       max-width: 500px;
-      text-shadow: 0 0 3px rgba(255, 255, 255, 1);
+      text-shadow: 0 0 5px rgba(255, 255, 255, 1);
       margin: auto;
     }
     .title {
       font-size: 6rem;
+      color: #2d6b77;
     }
     .info > hr {
       border: 1px solid black;
@@ -57,7 +58,7 @@
     }
     .button {
       padding: .5em 1em;
-      border: 2px solid black;
+      border: 3px solid rgba(0, 0, 0, .7);
       color: black;
       text-decoration: none;
       flex-grow: 1;
@@ -65,6 +66,10 @@
       text-align: center;
       margin: .5em;
       border-radius: 4px;
+      transition: background .3s;
+    }
+    .button:hover {
+      background: rgba(255,255,255,.7)
     }
     .hashtag {
       font-size: 1.2rem;
@@ -92,9 +97,16 @@
     <div class="script title center">The Inghams</div>
     <hr>
     <div class="center">March 26, 2017 in San Antonio, TX</div>
-    <div class="button-container"><a href="#" class="button">View Registry</a><a href="#" class="button">RSVP</a></div>
-    <div class="countdown center">100 days remaining</div>
+    <div class="button-container"><a href="https://www.myregistry.com/wedding-registry/Mathison-Ingham-Alyssa-Burton-Houston-TX/124315" class="button" target="_blank">View Registry</a><a href="#" class="button">RSVP</a></div>
+    <div class="countdown center" id="countdown"></div>
     <div class="hashtag center">#bringhamout</div>
   </div>
+  <script>
+      var dayInMs=1000*60*60*24
+      var now = new Date()
+      var weddingDate = new Date(2017,2,26)
+      var days = Math.ceil((weddingDate.getTime() - now.getTime())/dayInMs)
+      document.getElementById('countdown').innerHTML = days + ' Days Left'
+  </script>
 </body>
 </html>
