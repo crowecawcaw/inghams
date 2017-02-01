@@ -92,7 +92,17 @@
       background-color: rgba(255,255,255,.7);
       padding: 1em;
       margin: .5em;
-      display: none;
+      font-size: .8em;
+    }
+    .hotel .title {
+      font-size: 1em;
+      text-transform: uppercase;
+      display: block;
+    }
+    .hotel .address {
+      font-style: italic;
+      display: block;
+      padding-top: .3em;
     }
     
     .hashtag {
@@ -165,7 +175,7 @@
     
     @media screen and (min-aspect-ratio: 1/1) {
       .info {
-        transform: translateY(30%);
+        transform: translateY(10%);
         margin-left: 50%;
         width: 50%;
       }
@@ -193,11 +203,10 @@
     <div class="center">March 26, 2017 in San Antonio, TX</div>
     <div class="button-container"><a href="https://www.myregistry.com/wedding-registry/Mathison-Ingham-Alyssa-Burton-Houston-TX/1243158" class="button" target="_blank">View Registry</a><a href="#" class="button" onClick="$('.rsvp').css('display', 'flex')">RSVP</a></div>
     <div class="hotel">
-      Holiday Inn Express - Medical Center North
-      <a href="#">Book Hotel</a>
-      Group information and rates will already be included when you click the link. You can also call to book.
-      11010 Interstate 10 W, San Antonio, TX 78230
-210.561.9058
+      <span class="title">Holiday Inn Express - Medical Center North</span>
+      <span class="address">11010 Interstate 10 W, San Antonio, TX 78230</span>
+      <p>Click <a href="https://www.hiexpress.com/redirect?path=hd&brandCode=ex&localeCode=en&regionCode=1&hotelCode=SATLM&_PMID=99801505&GPC=BIW&viewfullsite=true" target="_blank">here</a> to access group infromation and rates or call 210.561.9058 for booking over the phone.</p>
+      <p></p>
 
     </div>
     <div class="countdown center" id="countdown"></div>
