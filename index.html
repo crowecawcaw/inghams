@@ -88,6 +88,13 @@
       background: rgba(255, 255, 255, .7)
     }
     
+    .hotel {
+      background-color: rgba(255,255,255,.7);
+      padding: 1em;
+      margin: .5em;
+      display: none;
+    }
+    
     .hashtag {
       font-size: 1.2rem;
     }
@@ -111,6 +118,13 @@
       max-width: 400px;
       margin: auto;
       
+    }
+    
+    .rsvp hr {
+      border-bottom: 2px solid rgba(255,255,255,.2);
+      border-top: 0;
+      border-left: 0;
+      border-right: 0;
     }
     
     input[type="text"],
@@ -177,14 +191,24 @@
     <div class="script title center">The Inghams</div>
     <hr>
     <div class="center">March 26, 2017 in San Antonio, TX</div>
-    <div class="button-container"><a href="https://www.myregistry.com/wedding-registry/Mathison-Ingham-Alyssa-Burton-Houston-TX/1243158" class="button" target="_blank">View Registry</a><!--<a href="#" class="button" onClick="$('.rsvp').css('display', 'flex')">RSVP</a>--></div>
+    <div class="button-container"><a href="https://www.myregistry.com/wedding-registry/Mathison-Ingham-Alyssa-Burton-Houston-TX/1243158" class="button" target="_blank">View Registry</a><a href="#" class="button" onClick="$('.rsvp').css('display', 'flex')">RSVP</a></div>
+    <div class="hotel">
+      Holiday Inn Express - Medical Center North
+      <a href="#">Book Hotel</a>
+      Group information and rates will already be included when you click the link. You can also call to book.
+      11010 Interstate 10 W, San Antonio, TX 78230
+210.561.9058
+
+    </div>
     <div class="countdown center" id="countdown"></div>
     <div class="hashtag center">#bringhamout</div>
   </div>
 
   <div class="rsvp">
     <form>
-      <p>Name:</p>
+      <p>We love you all! Due to limited seating, please refer to your invitation for those invited for attendance.</p>
+      <hr>
+      Name:
       <input type="text" name="name" id="name" size="20">
       <p>
         <span style="display: inline-block; padding-right: 30px; cursor:pointer;" onclick="attendingSelect(true)">
